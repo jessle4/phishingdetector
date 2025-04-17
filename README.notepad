@@ -1,5 +1,6 @@
 SMS Scam Detection using Multinomial Naïve Bayes
-##Overview
+
+## overview
 - This projectis a spam detection model for SMS messages using the Multinomial Naïve Bayes algorithm. 
 - It includes both supervised learning (using labelled data) and semi-supervised learning using label propagation. 
 - The model classifies messages as spam or non-malicious.
@@ -12,7 +13,7 @@ SMS Scam Detection using Multinomial Naïve Bayes
 - `ML ASS1 report.pdf`: Final written report answering all assignment questions (Q1–Q4).
 - `README.txt`: This file.
 
-## how to Run
+## how to run
 1. ppen `MLassignment1` in JupyterLab or VS Code.
 2. ensure the three CSV files are in the same directory as the notebook.
 3. change address of train_df = pd.read_csv(########) as currently it is my local address but find the path of the sms_supervised_train csv on your device and paste here
