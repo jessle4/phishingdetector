@@ -1,1 +1,32 @@
-{"note":"# COMP30027 Assignment 1 - SMS Scam Detection using Multinomial Naïve Bayes\n\n##Overview\n\nThis projectis a spam detection model for SMS messages using the Multinomial Naïve Bayes algorithm. It includes both supervised learning (using labelled data) and semi-supervised learning using label propagation. The model classifies messages as spam or non-malicious.\n\n## files included\n\n- `MLassignment1.ipynb`: Jupyter Notebook containing all code and adapted from template\n- `sms_supervised_train.csv`: labelled training set.\n- `sms_test.csv`: test set with ground truth labels.\n- `sms_unlabelled.csv`: unlabelled dataset used for semi-supervised learning.\n- `ML ASS1 report.pdf`: Final written report answering all assignment questions (Q1–Q4).\n- `README.txt`: This file.\n\n##how to Run\n\n1. ppen `MLassignment1` in JupyterLab or VS Code.\n2. ensure the three CSV files are in the same directory as the notebook.\n3. change address of train_df = pd.read_csv(########) as currently it is my local address but find the path of the sms_supervised_train csv on your device and paste here\n4. similarly to step 3, do the same for test_df = pd.read_csv(######) and find the path of the sms_test.csv file and paste in here.\n5. run all cells from top to bottom.\n\nThe notebook performs:\n- Training a Naïve Bayes classifier (Q1)\n- Evaluation on the test set with confusion matrix & confidence analysis (Q2)\n- Label propagation using high-confidence pseudo-labels (Q3)\n- Evaluation of semi-supervised model improvements (Q4)\n\n## model details\n\n- **Q1 Supervised Accuracy:** 97.5%\n- **Q3 Semi-Supervised Accuracy:** 92.6%\n- top predictive scam word: `prize` (R = 234.34)\n- test messages skipped due to OOV: 0\n","bgColorIndex":0,"textColorIndex":1}
+SMS Scam Detection using Multinomial Naïve Bayes
+##Overview
+- This projectis a spam detection model for SMS messages using the Multinomial Naïve Bayes algorithm. 
+- It includes both supervised learning (using labelled data) and semi-supervised learning using label propagation. 
+- The model classifies messages as spam or non-malicious.
+
+## files included
+- `MLassignment1.ipynb`: Jupyter Notebook containing all code and adapted from template
+- `sms_supervised_train.csv`: labelled training set.
+- `sms_test.csv`: test set with ground truth labels.
+- `sms_unlabelled.csv`: unlabelled dataset used for semi-supervised learning.
+- `ML ASS1 report.pdf`: Final written report answering all assignment questions (Q1–Q4).
+- `README.txt`: This file.
+
+## how to Run
+1. ppen `MLassignment1` in JupyterLab or VS Code.
+2. ensure the three CSV files are in the same directory as the notebook.
+3. change address of train_df = pd.read_csv(########) as currently it is my local address but find the path of the sms_supervised_train csv on your device and paste here
+4. similarly to step 3, do the same for test_df = pd.read_csv(######) and find the path of the sms_test.csv file and paste in here.
+5. run all cells from top to bottom.
+
+The notebook performs:
+- Training a Naïve Bayes classifier (Q1)
+- Evaluation on the test set with confusion matrix & confidence analysis (Q2)
+- Label propagation using high-confidence pseudo-labels (Q3)\n- Evaluation of semi-supervised model improvements (Q4)
+
+## model details
+- **Q1 Supervised Accuracy:** 97.5%
+- **Q3 Semi-Supervised Accuracy:** 92.6%
+- top predictive scam word: `prize` (R = 234.34)
+- test messages skipped due to it being an NaN value: 0
+","bgColorIndex":0,"textColorIndex":1}
